@@ -8,4 +8,8 @@ from scrapy.item import Item, Field
 class DoubanNotesItem(Item):
     # define the fields for your item here like:
     # name = Field()
-    pass
+    nid = Field()
+    owner = Field()
+    title = Field()
+    url = Field()
+    content = Field()
