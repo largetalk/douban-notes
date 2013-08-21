@@ -11,6 +11,10 @@ BOT_NAME = 'douban_notes'
 SPIDER_MODULES = ['douban_notes.spiders']
 NEWSPIDER_MODULE = 'douban_notes.spiders'
 
+DOWNLOAD_DELAY = 0.25
+RANDOMIZE_DOWNLOAD_DELAY = True
+USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36'
+
 ITEM_PIPELINES = [
           'scrapymongodb.MongoDBPipeline',
           ]
